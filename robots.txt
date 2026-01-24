@@ -1,0 +1,101 @@
+# ═══════════════════════════════════════════════════════════════════
+# ROBOTS.TXT - Proprius Recovery Inc.
+# https://www.proprius-recovery.com
+# Medical Revenue Recovery | No Surprises Act | IDR Arbitration
+# ═══════════════════════════════════════════════════════════════════
+
+# Allow all search engines
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /privacy-policy.html
+Allow: /terms-of-service.html
+Allow: /disclaimer.html
+
+# Sitemap location
+Sitemap: https://www.proprius-recovery.com/sitemap.xml
+
+# Crawl delay (optional - be gentle with server)
+Crawl-delay: 1
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /logo.png
+Allow: /hero-banner.png
+Allow: /og-image.png
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Bing Images
+User-agent: msnbot-media
+Allow: /
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Yandex
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# Facebook
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Pinterest
+User-agent: Pinterest
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# Host directive
+Host: https://www.proprius-recovery.com

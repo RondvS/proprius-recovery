@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://www.proprius-recovery.com/</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://www.proprius-recovery.com/logo.png</image:loc>
+            <image:title>Proprius Recovery Logo</image:title>
+            <image:caption>Medical Revenue Recovery Services for Out-of-Network Physicians</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.proprius-recovery.com/hero-banner.png</image:loc>
+            <image:title>Medical Revenue Recovery Hero Banner</image:title>
+            <image:caption>No Surprises Act IDR Arbitration Services</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.proprius-recovery.com/og-image.png</image:loc>
+            <image:title>Proprius Recovery Open Graph Image</image:title>
+            <image:caption>94% Success Rate Medical Revenue Recovery</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Privacy Policy -->
+    <url>
+        <loc>https://www.proprius-recovery.com/privacy-policy.html</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <!-- Terms of Service -->
+    <url>
+        <loc>https://www.proprius-recovery.com/terms-of-service.html</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <!-- Disclaimer -->
+    <url>
+        <loc>https://www.proprius-recovery.com/disclaimer.html</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+</urlset>
