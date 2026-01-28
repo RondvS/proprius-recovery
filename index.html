@@ -65,7 +65,7 @@
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What types of claims qualify for recovery?","acceptedAnswer":{"@type":"Answer","text":"Most out-of-network claims for emergency services, hospital-based procedures, and services where patients didn't have the opportunity to choose an in-network provider qualify under the No Surprises Act."}},{"@type":"Question","name":"How long does the recovery process take?","acceptedAnswer":{"@type":"Answer","text":"The typical timeline ranges from 60-120 days depending on the complexity of the case and insurance company responsiveness."}},{"@type":"Question","name":"What are your fees?","acceptedAnswer":{"@type":"Answer","text":"We work on a contingency basis—there are no upfront costs, no retainers, and no fees unless we successfully recover funds for you."}},{"@type":"Question","name":"Will this affect my relationship with hospitals?","acceptedAnswer":{"@type":"Answer","text":"No. The No Surprises Act arbitration process is between you (the provider) and the insurance company. It has no bearing on your hospital privileges."}},{"@type":"Question","name":"Is this legal and ethical?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. The No Surprises Act established IDR arbitration as a legitimate, federally-sanctioned process for resolving payment disputes."}}]}</script>
     
     <style>
-        /* ========== SELF-HOSTED FONTS ========== */
+        /* ========== SELF-HOSTED FONTS WITH SIZE-ADJUST (CLS FIX) ========== */
         @font-face {
             font-family: 'Montserrat';
             font-style: normal;
@@ -73,6 +73,10 @@
             font-display: swap;
             src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
                  url('fonts/montserrat-v26-latin-600.woff2') format('woff2');
+            size-adjust: 94%;
+            ascent-override: 96%;
+            descent-override: 24%;
+            line-gap-override: 0%;
         }
         @font-face {
             font-family: 'Montserrat';
@@ -81,6 +85,10 @@
             font-display: swap;
             src: local('Montserrat Bold'), local('Montserrat-Bold'),
                  url('fonts/montserrat-v26-latin-700.woff2') format('woff2');
+            size-adjust: 94%;
+            ascent-override: 96%;
+            descent-override: 24%;
+            line-gap-override: 0%;
         }
         @font-face {
             font-family: 'Montserrat';
@@ -89,6 +97,10 @@
             font-display: swap;
             src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
                  url('fonts/montserrat-v26-latin-800.woff2') format('woff2');
+            size-adjust: 94%;
+            ascent-override: 96%;
+            descent-override: 24%;
+            line-gap-override: 0%;
         }
         @font-face {
             font-family: 'Open Sans';
@@ -97,6 +109,10 @@
             font-display: swap;
             src: local('Open Sans Regular'), local('OpenSans-Regular'),
                  url('fonts/open-sans-v40-latin-regular.woff2') format('woff2');
+            size-adjust: 105%;
+            ascent-override: 101%;
+            descent-override: 29%;
+            line-gap-override: 0%;
         }
         @font-face {
             font-family: 'Open Sans';
@@ -105,6 +121,10 @@
             font-display: swap;
             src: local('Open Sans Medium'), local('OpenSans-Medium'),
                  url('fonts/open-sans-v40-latin-500.woff2') format('woff2');
+            size-adjust: 105%;
+            ascent-override: 101%;
+            descent-override: 29%;
+            line-gap-override: 0%;
         }
         
         /* ========== CSS VARIABLES ========== */
@@ -139,22 +159,14 @@
         .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
         
         /* ========== BUTTONS ========== */
-        .btn {
-            display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
-            padding: 1rem 2rem; font-family: var(--font-heading); font-size: 1rem; font-weight: 600;
-            border-radius: 8px; border: none; cursor: pointer; transition: all 0.3s ease;
-        }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem 2rem; font-family: var(--font-heading); font-size: 1rem; font-weight: 600; border-radius: 8px; border: none; cursor: pointer; transition: all 0.3s ease; }
         .btn:hover { transform: translateY(-2px); }
         .btn-primary { background: linear-gradient(135deg, #dc2626, #ef4444); color: #fff; box-shadow: 0 4px 14px rgba(220,38,38,0.4); }
         .btn-secondary { background: transparent; color: #fff; border: 2px solid #fff; }
         .btn-secondary:hover { background: #fff; color: var(--primary-blue); }
         
         /* ========== NAVBAR ========== */
-        .navbar {
-            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-            padding: 0.75rem 0; background: rgba(30,58,138,0.97); backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px); border-bottom: 3px solid var(--accent-red);
-        }
+        .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 0.75rem 0; background: rgba(30,58,138,0.97); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 3px solid var(--accent-red); }
         .navbar .container { display: flex; align-items: center; justify-content: space-between; }
         .logo img { height: 45px; width: auto; }
         .nav-links { display: flex; align-items: center; gap: 1.5rem; list-style: none; }
@@ -163,15 +175,9 @@
         .nav-cta { padding: 0.5rem 1rem; font-size: 0.85rem; }
         .mobile-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 0.5rem; }
         .mobile-toggle span { display: block; width: 28px; height: 3px; background: #fff; border-radius: 2px; transition: all 0.3s ease; }
-        
         @media screen and (max-width: 992px) {
             .mobile-toggle { display: flex !important; }
-            .nav-links {
-                position: fixed; top: 65px; left: 0; right: 0; background: #1e3a8a;
-                flex-direction: column; padding: 2rem 1.5rem; gap: 0.5rem;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-                transform: translateY(-150%); opacity: 0; visibility: hidden; transition: all 0.3s ease;
-            }
+            .nav-links { position: fixed; top: 65px; left: 0; right: 0; background: #1e3a8a; flex-direction: column; padding: 2rem 1.5rem; gap: 0.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transform: translateY(-150%); opacity: 0; visibility: hidden; transition: all 0.3s ease; }
             .nav-links.active { transform: translateY(0); opacity: 1; visibility: visible; }
             .nav-links li { width: 100%; }
             .nav-links a { display: block; font-size: 1.1rem; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
@@ -182,22 +188,11 @@
         }
         
         /* ========== HERO ========== */
-        .hero {
-            min-height: 100vh; display: flex; align-items: center; padding: 7rem 0 4rem;
-            background: linear-gradient(135deg, rgba(30,58,138,0.98), rgba(30,64,175,0.95), rgba(37,99,235,0.92));
-            position: relative;
-        }
-        .hero::after {
-            content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 120px;
-            background: linear-gradient(to top, var(--bg-light), transparent);
-        }
+        .hero { min-height: 100vh; display: flex; align-items: center; padding: 7rem 0 4rem; background: linear-gradient(135deg, rgba(30,58,138,0.98), rgba(30,64,175,0.95), rgba(37,99,235,0.92)); position: relative; }
+        .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: linear-gradient(to top, var(--bg-light), transparent); }
         .hero .container { position: relative; z-index: 1; }
         .hero-content { max-width: 700px; }
-        .hero-badge {
-            display: inline-flex; align-items: center; gap: 0.5rem;
-            padding: 0.5rem 1rem; background: rgba(220,38,38,0.2); border: 1px solid rgba(220,38,38,0.5);
-            border-radius: 50px; color: #fca5a5; font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem;
-        }
+        .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: rgba(220,38,38,0.2); border: 1px solid rgba(220,38,38,0.5); border-radius: 50px; color: #fca5a5; font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem; }
         .hero h1 { color: #fff; margin-bottom: 1.5rem; }
         .hero h1 .highlight { color: var(--accent-red-light); }
         .hero-desc { font-size: 1.15rem; color: rgba(255,255,255,0.9); margin-bottom: 2rem; max-width: 550px; }
@@ -207,14 +202,7 @@
         .stat-number { font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; color: #fff; }
         .stat-number span { color: var(--accent-red-light); }
         .stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 1px; }
-        
-        @media (max-width: 600px) {
-            .hero { padding: 6rem 0 3rem; min-height: auto; }
-            .hero-cta { flex-direction: column; }
-            .hero-cta .btn { width: 100%; }
-            .hero-stats { gap: 1.5rem; }
-            .stat-number { font-size: 2rem; }
-        }
+        @media (max-width: 600px) { .hero { padding: 6rem 0 3rem; min-height: auto; } .hero-cta { flex-direction: column; } .hero-cta .btn { width: 100%; } .hero-stats { gap: 1.5rem; } .stat-number { font-size: 2rem; } }
         
         /* ========== SECTIONS ========== */
         section { padding: 5rem 0; }
@@ -370,13 +358,10 @@
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    
     <header>
         <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
             <div class="container">
-                <a href="/" class="logo" aria-label="Proprius Recovery - Home">
-                    <img src="logo.png" alt="Proprius Recovery" width="180" height="45">
-                </a>
+                <a href="/" class="logo" aria-label="Proprius Recovery - Home"><img src="logo.png" alt="Proprius Recovery" width="180" height="45"></a>
                 <ul class="nav-links" id="navLinks" role="menubar">
                     <li role="none"><a href="#problem" role="menuitem">The Problem</a></li>
                     <li role="none"><a href="#solution" role="menuitem">Solution</a></li>
@@ -385,13 +370,10 @@
                     <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
                     <li role="none"><a href="#contact" class="btn btn-primary nav-cta" role="menuitem">Get Free Analysis</a></li>
                 </ul>
-                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
-                    <span></span><span></span><span></span>
-                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
             </div>
         </nav>
     </header>
-
     <main id="main">
         <section class="hero" aria-labelledby="hero-title">
             <div class="container">
@@ -411,7 +393,6 @@
                 </div>
             </div>
         </section>
-
         <section class="problem-section" id="problem" aria-labelledby="problem-title">
             <div class="container">
                 <header class="section-header">
@@ -427,7 +408,6 @@
                 </div>
             </div>
         </section>
-
         <section class="opportunity-section" id="solution" aria-labelledby="solution-title">
             <div class="container">
                 <header class="section-header">
@@ -457,7 +437,6 @@
                 </div>
             </div>
         </section>
-
         <section class="process-section" id="process" aria-labelledby="process-title">
             <div class="container">
                 <header class="section-header">
@@ -473,7 +452,6 @@
                 </div>
             </div>
         </section>
-
         <section class="why-section" aria-labelledby="why-title">
             <div class="container">
                 <header class="section-header">
@@ -491,7 +469,6 @@
                 </div>
             </div>
         </section>
-
         <section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
             <div class="container">
                 <header class="section-header">
@@ -500,22 +477,10 @@
                     <p class="section-subtitle">Real results from doctors who took action.</p>
                 </header>
                 <div class="testimonials-grid">
-                    <article class="testimonial-card fade-in">
-                        <blockquote class="testimonial-content">"I once accepted these low payments until I discovered it's possible to recoup these funds through arbitration. The team at Proprius helped me recover thousands that I had written off as lost."</blockquote>
-                        <footer class="testimonial-author"><div class="author-avatar" aria-hidden="true">JM</div><div class="author-info"><h5>Dr. James M.</h5><span>Anesthesiologist, Los Angeles</span></div></footer>
-                    </article>
-                    <article class="testimonial-card fade-in">
-                        <blockquote class="testimonial-content">"As an emergency physician, I don't have time to fight insurance companies. This team took over completely—I barely had to lift a finger, and the results exceeded my expectations."</blockquote>
-                        <footer class="testimonial-author"><div class="author-avatar" aria-hidden="true">SP</div><div class="author-info"><h5>Dr. Sarah P.</h5><span>Emergency Medicine, San Diego</span></div></footer>
-                    </article>
-                    <article class="testimonial-card fade-in">
-                        <blockquote class="testimonial-content">"The No Surprises Act was confusing to me. They made it simple, handled everything professionally, and now I have a system in place for all my out-of-network claims."</blockquote>
-                        <footer class="testimonial-author"><div class="author-avatar" aria-hidden="true">RK</div><div class="author-info"><h5>Dr. Robert K.</h5><span>General Surgeon, Sacramento</span></div></footer>
-                    </article>
-                    <article class="testimonial-card fade-in">
-                        <blockquote class="testimonial-content">"I was skeptical—zero upfront cost sounded too good. But they delivered. In three months, they recovered more than I had lost in the previous two years combined."</blockquote>
-                        <footer class="testimonial-author"><div class="author-avatar" aria-hidden="true">LT</div><div class="author-info"><h5>Dr. Lisa T.</h5><span>Radiologist, San Francisco</span></div></footer>
-                    </article>
+                    <article class="testimonial-card fade-in"><blockquote class="testimonial-content">"I once accepted these low payments until I discovered it's possible to recoup these funds through arbitration. The team at Proprius helped me recover thousands that I had written off as lost."</blockquote><footer class="testimonial-author"><div class="author-avatar" aria-hidden="true">JM</div><div class="author-info"><h5>Dr. James M.</h5><span>Anesthesiologist, Los Angeles</span></div></footer></article>
+                    <article class="testimonial-card fade-in"><blockquote class="testimonial-content">"As an emergency physician, I don't have time to fight insurance companies. This team took over completely—I barely had to lift a finger, and the results exceeded my expectations."</blockquote><footer class="testimonial-author"><div class="author-avatar" aria-hidden="true">SP</div><div class="author-info"><h5>Dr. Sarah P.</h5><span>Emergency Medicine, San Diego</span></div></footer></article>
+                    <article class="testimonial-card fade-in"><blockquote class="testimonial-content">"The No Surprises Act was confusing to me. They made it simple, handled everything professionally, and now I have a system in place for all my out-of-network claims."</blockquote><footer class="testimonial-author"><div class="author-avatar" aria-hidden="true">RK</div><div class="author-info"><h5>Dr. Robert K.</h5><span>General Surgeon, Sacramento</span></div></footer></article>
+                    <article class="testimonial-card fade-in"><blockquote class="testimonial-content">"I was skeptical—zero upfront cost sounded too good. But they delivered. In three months, they recovered more than I had lost in the previous two years combined."</blockquote><footer class="testimonial-author"><div class="author-avatar" aria-hidden="true">LT</div><div class="author-info"><h5>Dr. Lisa T.</h5><span>Radiologist, San Francisco</span></div></footer></article>
                 </div>
                 <aside class="results-banner fade-in" aria-label="Average recovery results">
                     <div><h4>Average Recovery Results</h4><p>Based on cases handled in the past 12 months</p></div>
@@ -527,7 +492,6 @@
                 </aside>
             </div>
         </section>
-
         <section class="faq-section" id="faq" aria-labelledby="faq-title">
             <div class="container">
                 <header class="section-header">
@@ -545,7 +509,6 @@
                 </div>
             </div>
         </section>
-
         <section class="california-section" aria-labelledby="california-title">
             <div class="container">
                 <div class="california-content">
@@ -565,13 +528,10 @@
                             <span class="city-tag" role="listitem">Irvine</span>
                         </div>
                     </div>
-                    <div class="california-visual fade-in">
-                        <img src="logo.png" alt="Proprius Recovery serves California physicians" width="200" height="200" loading="lazy">
-                    </div>
+                    <div class="california-visual fade-in"><img src="logo.png" alt="Proprius Recovery serves California physicians" width="200" height="200" loading="lazy"></div>
                 </div>
             </div>
         </section>
-
         <section class="cta-section" id="contact" aria-labelledby="cta-title">
             <div class="container">
                 <div class="cta-content fade-in">
@@ -608,7 +568,6 @@
             </div>
         </section>
     </main>
-
     <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
@@ -639,7 +598,6 @@
             </div>
         </div>
     </footer>
-
     <script>const mobileToggle=document.getElementById('mobileToggle'),navLinks=document.getElementById('navLinks');mobileToggle&&navLinks&&(mobileToggle.addEventListener('click',function(){navLinks.classList.toggle('active'),this.classList.toggle('active');const e=navLinks.classList.contains('active');this.setAttribute('aria-expanded',e)}),document.querySelectorAll('.nav-links a').forEach(e=>{e.addEventListener('click',()=>{navLinks.classList.remove('active'),mobileToggle.classList.remove('active'),mobileToggle.setAttribute('aria-expanded','false')})}));document.querySelectorAll('.faq-item').forEach(e=>{const t=e.querySelector('.faq-question');t.addEventListener('click',()=>{const n=e.classList.contains('active');document.querySelectorAll('.faq-item').forEach(e=>{e.classList.remove('active'),e.querySelector('.faq-question').setAttribute('aria-expanded','false')}),n||(e.classList.add('active'),t.setAttribute('aria-expanded','true'))})});const observer=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&(e.target.classList.add('visible'),observer.unobserve(e.target))})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});document.querySelectorAll('.fade-in').forEach(e=>observer.observe(e));document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener('click',function(t){t.preventDefault();const n=document.querySelector(this.getAttribute('href'));if(n){const e=80,t=n.getBoundingClientRect().top+window.pageYOffset-e;window.scrollTo({top:t,behavior:'smooth'})}})});const form=document.getElementById('contactForm'),submitBtn=document.getElementById('submitBtn'),formSuccess=document.getElementById('formSuccess');form.addEventListener('submit',function(e){e.preventDefault();const t=submitBtn.textContent;submitBtn.textContent='Sending...',submitBtn.disabled=!0,fetch(this.action,{method:'POST',body:new FormData(this)}).then(e=>e.json()).then(e=>{if(!e.success)throw new Error('Failed');form.style.display='none',formSuccess.classList.add('show')}).catch(()=>{alert('Error sending message. Please call (917) 647-5031.'),submitBtn.textContent=t,submitBtn.disabled=!1})});</script>
 </body>
 </html>
