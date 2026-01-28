@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     
-    <!-- Homepage -->
+    <!-- Homepage - main landing page -->
     <url>
         <loc>https://www.proprius-recovery.com/</loc>
-        <lastmod>2025-01-24</lastmod>
+        <lastmod>2025-01-28</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -18,14 +14,8 @@
             <image:caption>Medical Revenue Recovery Services for Out-of-Network Physicians</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://www.proprius-recovery.com/hero-banner.png</image:loc>
-            <image:title>Medical Revenue Recovery Hero Banner</image:title>
-            <image:caption>No Surprises Act IDR Arbitration Services</image:caption>
-        </image:image>
-        <image:image>
             <image:loc>https://www.proprius-recovery.com/og-image.png</image:loc>
-            <image:title>Proprius Recovery Open Graph Image</image:title>
-            <image:caption>94% Success Rate Medical Revenue Recovery</image:caption>
+            <image:title>Proprius Recovery - 94% Success Rate</image:title>
         </image:image>
     </url>
     
