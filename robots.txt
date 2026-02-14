@@ -1,20 +1,17 @@
-# ═══════════════════════════════════════════════════════════════════
+# ===================================================================
 # ROBOTS.TXT - Proprius Recovery Inc.
 # https://www.proprius-recovery.com
 # Medical Revenue Recovery | No Surprises Act | IDR Arbitration
-# ═══════════════════════════════════════════════════════════════════
+# ===================================================================
 
 # Allow all search engines
 User-agent: *
 Allow: /
 Allow: /index.html
-Allow: /a.html
+Allow: /blog/
 Allow: /privacy-policy.html
 Allow: /terms-of-service.html
 Allow: /disclaimer.html
-
-# Block A/B test variant B from indexing
-Disallow: /b.html
 
 # Sitemap location
 Sitemap: https://www.proprius-recovery.com/sitemap.xml
@@ -25,7 +22,6 @@ Crawl-delay: 1
 # Google specific
 User-agent: Googlebot
 Allow: /
-Disallow: /b.html
 Crawl-delay: 0
 
 # Google Images
@@ -39,18 +35,15 @@ Allow: /*.webp$
 # Bing
 User-agent: Bingbot
 Allow: /
-Disallow: /b.html
 Crawl-delay: 1
 
 # DuckDuckGo
 User-agent: DuckDuckBot
 Allow: /
-Disallow: /b.html
 
 # Yandex
 User-agent: Yandex
 Allow: /
-Disallow: /b.html
 Crawl-delay: 2
 
 # Social bots

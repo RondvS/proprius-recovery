@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-    
+
     <!-- Homepage - main landing page -->
     <url>
         <loc>https://www.proprius-recovery.com/</loc>
-        <lastmod>2025-01-28</lastmod>
+        <lastmod>2026-02-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -15,10 +15,50 @@
         </image:image>
         <image:image>
             <image:loc>https://www.proprius-recovery.com/og-image.png</image:loc>
-            <image:title>Proprius Recovery - 94% Success Rate</image:title>
+            <image:title>Proprius Recovery - Medical Revenue Recovery</image:title>
         </image:image>
     </url>
-    
+
+    <!-- Blog: No Surprises Act Guide -->
+    <url>
+        <loc>https://www.proprius-recovery.com/blog/no-surprises-act-guide.html</loc>
+        <lastmod>2026-02-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Blog: Recovery Calculator -->
+    <url>
+        <loc>https://www.proprius-recovery.com/blog/how-much-can-you-recover.html</loc>
+        <lastmod>2026-02-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Blog: Insurance Underpayment Tactics -->
+    <url>
+        <loc>https://www.proprius-recovery.com/blog/insurance-underpayment-tactics.html</loc>
+        <lastmod>2026-02-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Blog: Emergency Medicine Recovery -->
+    <url>
+        <loc>https://www.proprius-recovery.com/blog/emergency-medicine-recovery.html</loc>
+        <lastmod>2026-02-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Blog: IDR vs ERISA Appeals -->
+    <url>
+        <loc>https://www.proprius-recovery.com/blog/idr-vs-erisa-appeals.html</loc>
+        <lastmod>2026-02-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- Privacy Policy -->
     <url>
         <loc>https://www.proprius-recovery.com/privacy-policy.html</loc>
@@ -26,7 +66,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>
-    
+
     <!-- Terms of Service -->
     <url>
         <loc>https://www.proprius-recovery.com/terms-of-service.html</loc>
@@ -34,7 +74,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>
-    
+
     <!-- Disclaimer -->
     <url>
         <loc>https://www.proprius-recovery.com/disclaimer.html</loc>
@@ -42,5 +82,5 @@
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>
-    
+
 </urlset>
