@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#" itemscope itemtype="https://schema.org/WebPage">
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#" itemscope itemtype="https://schema.org/Article">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -1011,6 +1011,12 @@
     window.addEventListener('scroll', () => {
         navbar.classList.toggle('scrolled', window.scrollY > 50);
     });
+    </script>
+    <style>.cookie-banner{position:fixed;bottom:0;left:0;right:0;background:#0f172a;color:#e2e8f0;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:center;gap:1rem;z-index:10000;box-shadow:0 -2px 10px rgba(0,0,0,0.3);font-size:0.9rem;flex-wrap:wrap}.cookie-banner a{color:#fbbf24}.cookie-banner button{background:#fbbf24;color:#0f172a;border:none;padding:0.5rem 1.5rem;border-radius:4px;font-weight:600;cursor:pointer;white-space:nowrap}.cookie-banner button:hover{background:#f59e0b}.cookie-banner .cookie-decline{background:transparent;color:#94a3b8;border:1px solid #475569}.cookie-banner .cookie-decline:hover{border-color:#94a3b8;color:#e2e8f0}</style>
+    <script>
+    (function(){if(localStorage.getItem('cookieConsent'))return;var b=document.createElement('div');b.className='cookie-banner';b.id='cookieBanner';b.innerHTML='<span>We use cookies to analyze site traffic and improve your experience. See our <a href="/privacy-policy.html">Privacy Policy</a>.</span><button onclick="acceptCookies()">Accept</button><button class="cookie-decline" onclick="declineCookies()">Decline</button>';document.body.appendChild(b);})();
+    function acceptCookies(){localStorage.setItem('cookieConsent','accepted');document.getElementById('cookieBanner').remove();}
+    function declineCookies(){localStorage.setItem('cookieConsent','declined');document.getElementById('cookieBanner').remove();}
     </script>
 </body>
 </html>
