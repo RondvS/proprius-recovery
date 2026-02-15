@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#" itemscope itemtype="https://schema.org/WebPage">
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#" itemscope itemtype="https://schema.org/Article">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,6 +59,7 @@
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="../logo.png">
     <link rel="apple-touch-icon" href="../logo.png">
+    <link rel="manifest" href="../manifest.json">
 
     <!-- Schema.org: Article -->
     <script type="application/ld+json">{
@@ -105,12 +106,6 @@
             {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Blog",
-                "item": "https://www.proprius-recovery.com/#blog"
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
                 "name": "7 Insurance Underpayment Tactics Exposed",
                 "item": "https://www.proprius-recovery.com/blog/insurance-underpayment-tactics.html"
             }
@@ -515,6 +510,24 @@
             color: var(--blue-500);
         }
 
+        /* ========== SKIP LINK ========== */
+        .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); background: var(--navy-900); color: var(--amber-400); padding: 1rem 2rem; z-index: 10000; border-radius: 0 0 8px 8px; }
+        .skip-link:focus { top: 0; }
+
+        /* ========== RELATED ARTICLES ========== */
+        .related-articles { margin: 3rem 0; }
+        .related-articles h3 { margin-bottom: 1.5rem; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .related-card { background: #fff; border: 1px solid var(--cream-300); border-radius: 12px; padding: 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .related-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+        .related-card-tag { display: inline-block; padding: 0.2rem 0.6rem; background: var(--cream-200); border-radius: 4px; font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+        .related-card h4 { font-size: 1.1rem; margin-bottom: 0.5rem; line-height: 1.3; }
+        .related-card h4 a { color: var(--navy-900); }
+        .related-card h4 a:hover { color: var(--blue-500); }
+        .related-card p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem; }
+        .related-card .read-more { color: var(--blue-500); font-weight: 600; font-size: 0.9rem; }
+        .related-card .read-more:hover { color: var(--blue-600); }
+
         /* ========== FOOTER ========== */
         .footer { background: #0a0f1a; padding: 5rem 0 2rem; }
         .footer .container { max-width: 1200px; }
@@ -564,6 +577,8 @@
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2JCNR7K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
 
     <header>
         <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
@@ -832,6 +847,37 @@
 
             </div>
         </article>
+
+        <!-- RELATED ARTICLES -->
+        <div class="related-articles">
+            <h3>Continue Reading</h3>
+            <div class="related-grid">
+                <div class="related-card">
+                    <span class="related-card-tag">Guide</span>
+                    <h4><a href="no-surprises-act-guide.html">The Complete Guide to No Surprises Act Arbitration for Physicians</a></h4>
+                    <p>Step-by-step IDR process, eligibility, costs, and strategies for maximizing your recovery.</p>
+                    <a href="no-surprises-act-guide.html" class="read-more">Read Article &rarr;</a>
+                </div>
+                <div class="related-card">
+                    <span class="related-card-tag">Calculator</span>
+                    <h4><a href="how-much-can-you-recover.html">How Much Can Your Practice Recover? Revenue Recovery Calculator</a></h4>
+                    <p>Estimate your potential recovery based on specialty, volume, and payer mix.</p>
+                    <a href="how-much-can-you-recover.html" class="read-more">Read Article &rarr;</a>
+                </div>
+                <div class="related-card">
+                    <span class="related-card-tag">Specialty</span>
+                    <h4><a href="emergency-medicine-recovery.html">Revenue Recovery for Emergency Medicine Physicians</a></h4>
+                    <p>Specialized strategies for ER physicians facing out-of-network underpayments.</p>
+                    <a href="emergency-medicine-recovery.html" class="read-more">Read Article &rarr;</a>
+                </div>
+                <div class="related-card">
+                    <span class="related-card-tag">Comparison</span>
+                    <h4><a href="idr-vs-erisa-appeals.html">IDR vs. ERISA Appeals: Which Path Is Right for You?</a></h4>
+                    <p>A detailed comparison of federal IDR and ERISA litigation strategies.</p>
+                    <a href="idr-vs-erisa-appeals.html" class="read-more">Read Article &rarr;</a>
+                </div>
+            </div>
+        </div>
 
     </main>
 

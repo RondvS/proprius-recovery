@@ -30,6 +30,9 @@
     <meta property="og:title" content="The Complete Guide to No Surprises Act Arbitration for Physicians (2026)">
     <meta property="og:description" content="Everything physicians need to know about IDR arbitration under the No Surprises Act. Step-by-step process, costs, win rates, and strategies. Providers win 75%+ of disputes with median awards 2.65x QPA.">
     <meta property="og:image" content="https://www.proprius-recovery.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="No Surprises Act Arbitration Guide - Proprius Recovery">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Proprius Recovery">
     <meta property="article:published_time" content="2026-01-15T08:00:00-08:00">
@@ -44,6 +47,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="The Complete Guide to No Surprises Act Arbitration for Physicians (2026)">
     <meta name="twitter:description" content="Everything physicians need to know about IDR arbitration. Providers win 75%+ of disputes with median awards 2.65x QPA. Full guide with process, costs, and strategies.">
+    <meta name="twitter:image" content="https://www.proprius-recovery.com/og-image.png">
 
     <!-- Mobile & PWA -->
     <meta name="theme-color" content="#0f172a">
@@ -54,6 +58,7 @@
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="../logo.png">
     <link rel="apple-touch-icon" href="../logo.png">
+    <link rel="manifest" href="../manifest.json">
 
     <!-- Schema.org Article -->
     <script type="application/ld+json">{
@@ -99,12 +104,6 @@
             {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Blog",
-                "item": "https://www.proprius-recovery.com/#blog"
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
                 "name": "No Surprises Act Guide",
                 "item": "https://www.proprius-recovery.com/blog/no-surprises-act-guide.html"
             }
@@ -459,6 +458,10 @@
         .article-cta p { color: rgba(255,255,255,0.8); font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem; }
         .article-cta .btn { font-size: 1.05rem; padding: 1.2rem 3rem; }
 
+        /* ========== SKIP LINK ========== */
+        .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); background: var(--navy-900); color: var(--amber-400); padding: 1rem 2rem; z-index: 10000; border-radius: 0 0 8px 8px; }
+        .skip-link:focus { top: 0; }
+
         /* ========== RELATED ARTICLES ========== */
         .related-articles { margin: 3rem 0; }
         .related-articles h3 { margin-bottom: 1.5rem; }
@@ -519,6 +522,8 @@
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2JCNR7K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
 
     <!-- ========== NAVBAR ========== -->
     <header class="navbar" id="navbar" role="banner">
