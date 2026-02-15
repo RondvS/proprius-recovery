@@ -320,6 +320,10 @@
 
         .hero-visual { position: relative; display: flex; align-items: center; justify-content: center; }
 
+        .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); background: var(--navy-900); color: var(--amber-400); padding: 1rem 2rem; z-index: 10000; border-radius: 0 0 8px 8px; }
+        .skip-link:focus { top: 0; }
+    </style>
+    <style id="deferred-css" media="print" onload="this.media='all'">
         /* ========== ROI CALCULATOR ========== */
         .roi-calculator {
             background: rgba(255,255,255,0.05); backdrop-filter: blur(10px);
@@ -725,9 +729,6 @@
         .fade-in-right.visible { opacity: 1; transform: translateX(0); }
 
         @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
-
-        .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); background: var(--navy-900); color: var(--amber-400); padding: 1rem 2rem; z-index: 10000; border-radius: 0 0 8px 8px; }
-        .skip-link:focus { top: 0; }
     </style>
     <noscript><style>.fade-in,.fade-in-left,.fade-in-right{opacity:1!important;transform:none!important}</style></noscript>
 </head>
