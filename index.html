@@ -1387,5 +1387,15 @@
     function acceptCookies(){localStorage.setItem('cookieConsent','accepted');document.getElementById('cookieBanner').remove();}
     function declineCookies(){localStorage.setItem('cookieConsent','declined');document.getElementById('cookieBanner').remove();window['ga-disable-GTM-K2JCNR7K']=true;}
     </script>
+    <!-- Vercel Analytics -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <!-- Vercel Speed Insights -->
+    <script>
+      window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>
